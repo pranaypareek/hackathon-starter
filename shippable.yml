@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - 0.10.25
+
+before_script:
+  - mkdir -p test
+
+script:
+  - npm test
+  - mocha
+
+branches:
+  only:
+    - master
